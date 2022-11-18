@@ -185,9 +185,14 @@ main#refer-earn #footer h3{
 
 main#refer-earn #footer :nth-child(1){
     margin-bottom: 20px;
+    color: rgba(128, 0, 128, 1);
 }
 
 main#refer-earn #footer :nth-child(1):visited{
+    color: rgba(128, 0, 128, 1);
+}
+
+main#refer-earn #footer :nth-child(1):active{
     color: rgba(128, 0, 128, 1);
 }
 
