@@ -38,7 +38,7 @@ export default function ReferInfo(){
         return(
             <div className="information" key={i}>
                 <div className="info-logo">
-                    <img src={`../public/${information.logo}`} alt="" />
+                    <img src={`../${information.logo}`} alt="" />
                 </div>
                 <div className="info-description">
                     <p className="info-title">{information.title}</p>

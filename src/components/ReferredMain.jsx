@@ -17,7 +17,7 @@ export default function ReferedMain(){
             </p>
 
             <Link to="/" id="go-back">
-                <img src="../public/back-arrow.svg" alt="" />
+                <img src="../back-arrow.svg" alt="" />
                 <span>go back</span>
             </Link>
             <div className="stats">

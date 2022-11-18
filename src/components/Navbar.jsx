@@ -6,15 +6,15 @@ export default function Navbar(){
     return (
         <nav className="navbar">
             <div className="logo-container">
-                <img src="../public/logo.png" alt="TechDude Logo" />
+                <img src="../logo.png" alt="TechDude Logo" />
             </div>
             <div className="link-container">
                 <Link to="/"><h2>My Assignment</h2></Link>
                 <Link to="/"><h2>Chat with Mentor</h2></Link>
                 <div className="profile-link-container">
-                    <img src="../public/profile.svg" alt="" className="profile-pic"/>
+                    <img src="../profile.svg" alt="" className="profile-pic"/>
                     <h2>ProfileName</h2>
-                    <img src="../public/down-arrow.svg" alt="" />
+                    <img src="../down-arrow.svg" alt="" />
                 </div>
             </div>
         </nav>
