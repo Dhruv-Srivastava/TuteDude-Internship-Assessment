@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+}
+
+.navbar{
+    margin: 5px 32px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .link-container{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-right: 32px;
+}
+
+.navbar .link-container h2{
+    font-weight: 500;
+    color: rgba(128, 0, 128, 0.25);
+    font-size: 18px;
+}
+
+.navbar .link-container .profile-link-container{
+    display: flex;
+}
+
+.navbar .link-container .profile-link-container h2{
+    color: rgba(128, 0, 128, 1);
+    margin-left: 6px;
+    margin-right: 10px;
+}
+/* Styling main#refer-earn */
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+main #current-page{
+    font-size: 14px;
+    margin-block: 25px;
+}
+
+main#refer-earn #dashboard{
+    width: 100%;
+    display: flex;
+    gap: 93px;
+}
+
+
+main#refer-earn #dashboard .balance-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 38px;
+
+    box-shadow: 0 3px 100px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    padding: 20px 35px 29px 20px;
+
+}
+
+main#refer-earn #dashboard .balance-container .balance-info{
+    display: flex;
+    gap: 62px;
+}
+
+main#refer-earn #dashboard .balance-container#hide{
+    display: none;
+}
+
+main#refer-earn #dashboard .balance-container .balance-info p{
+    font-size: 14px;
+    color: rgba(128, 0, 128, 1);
+}
+
+main#refer-earn #dashboard .balance-container .balance-info h3{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+#withdraw{
+    color: white;
+    background-color: rgba(128, 0, 128, 1);
+    border-radius: 20px;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+main#refer-earn #dashboard .referral-code-container h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(128, 0, 128, 1);
+}
+
+main#refer-earn #dashboard #referral-code{
+    margin-top: 9px;
+    color: rgba(128, 0, 128, 1);
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to left, rgba(128, 0, 128, 1), rgba(255, 134, 76, 1)) border-box;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+    letter-spacing: 20px;
+    text-align: center;
+    padding: 15px 64px 15px 64px;
+    z-index: 1;
+}
+main#refer-earn #refer-info{
+    margin-top: 40px;
+}
+main#refer-earn #refer-info .refer-info-container h2{
+    font-size: 24px;
+    color: rgba(128, 0, 128, 1);
+    margin-bottom: 20px;
+}
+main#refer-earn #refer-info .refer-info-container .info-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 47.5px;
+    column-gap: 33px;
+}
+
+main#refer-earn #refer-info .refer-info-container .info-container .information{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+main#refer-earn #refer-info .refer-info-container .info-container .information .info-logo{
+    background-color: rgba(217, 217, 217, 0.25);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main#refer-earn #refer-info .refer-info-container .info-container .information .info-title{
+    font-size: 16px;
+}
+
+main#refer-earn #refer-info .refer-info-container .info-container .information .info-desc{
+    font-size: 16px;
+    color: rgba(77, 77, 77, 1);
+    max-width: 274px;
+}
+
+main#refer-earn #footer{
+    margin-top:60px;
+    margin-bottom: 80px;
+    color: rgba(128, 0, 128, 1);
+    font-size: 16px;
+}
+
+main#refer-earn #footer h3{
+    font-weight: 500;
+}
+
+main#refer-earn #footer :nth-child(1){
+    margin-bottom: 20px;
+}
+
+main#refer-earn #footer :nth-child(1):visited{
+    color: rgba(128, 0, 128, 1);
+}
+
+main#referred #go-back{
+    display: none;
+}
+
+main#referred .stats{
+    display: flex;
+    justify-content: space-between;
+}
+
+main#referred .stats h2{
+    color: rgba(128, 0, 128, 1);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+main#referred .stats h4{
+    font-weight: 500;
+    letter-spacing: 15px;
+    padding: 13px 10px 13px 15px;
+    text-align: center;
+    border: 1.5px solid rgba(223, 223, 223, 1);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+main#referred .stats .wallet-container{
+    box-shadow: 0 2px 8px 0 rgba(128, 0, 128, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main#referred .stats .wallet-container .wallet :nth-child(1){
+    font-size: 14px;
+    color: rgba(128, 0, 128, 1);
+}
+
+main#referred .stats .wallet-container .wallet :nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main#referred #friends{
+    margin-top: 66px;
+}
+
+
+main#referred #friends h2{
+    font-size: 20px;
+    color: rgba(128, 0, 128, 1);
+    font-weight: 600;
+}
+
+main#referred #friends h2 span{
+    color: rgba(98, 98, 98, 1);
+    font-weight: 400;
+}
+
+main#referred #friends .card-slider{
+    max-width: 90%;
+    cursor: grab;
+    overflow: hidden;
+}
+
+main#referred #friends .friends-card-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+main#referred #friends .friends-card-container .friend-card{
+    background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main#referred #friends .friends-card-container .friend-card .title-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main#referred #friends .friends-card-container .friend-card .title-date h3{
+    font-size: 16px;
+}
+main#referred #friends .friends-card-container .friend-card .title-date p{
+    font-size: 14px;
+}
+
+main#referred #friends .friends-card-container .friend-card #courses-enrolled{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main#referred #friends .friends-card-container .friend-card .courses{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 10px;
+    gap: 10px;
+    margin-bottom: 29px;
+}
+
+
+
+main#referred #friends .friends-card-container .friend-card .courses .course-name{
+    font-size: 14px;
+    border: 1.5px solid rgba(238, 174, 174, 1);
+    border-radius: 20px;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+main#referred #friends .friends-card-container .friend-card .referral-amount{
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main#referred #friends .friends-card-container .friend-card .referral-amount :nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main#referred #t-c{
+    color: rgba(128, 0, 128, 1);
+    margin-bottom: 72px;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* Media query for mobile view */
+
+@media screen and (max-width:576px){
+
+    .navbar{
+        margin:0;
+        margin-top: 59px;
+        justify-content: space-around;
+    }
+
+    .navbar .link-container .profile-link-container{
+        background-color: rgba(128, 0, 128, 1);
+        padding: 12px 22px 12px 16px;
+        border-radius: 10px;
+    }
+
+    .navbar .link-container .profile-link-container h2{
+        color: white;
+    }
+
+    .navbar .link-container .profile-link-container img{
+        filter: invert(95%) sepia(95%) saturate(19%) hue-rotate(299deg) brightness(105%) contrast(107%);
+    }
+
+    .navbar .link-container >a{
+        display: none;
+    }
+
+    .navbar .link-container .profile-link-container .profile-pic{
+        display: none;
+    }
+
+    main{
+        width: 85%;
+    }
+
+    main #current-page{
+        margin-block: 51px;
+    }
+
+    main#refer-earn #dashboard{
+        flex-direction: column;
+        gap: 51px;
+    }
+    
+    main#refer-earn #dashboard #show{
+        display: none;
+    }
+    main#refer-earn #dashboard .balance-container#hide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 35px 29px 20px;
+        justify-content: space-between;
+    }
+
+    #hide h3{
+        font-size: 26px;
+        line-height: 48px;
+        font-weight: 500;
+    }
+
+    #hide p{
+        font-size: 14px;
+        color: rgba(128, 0, 128, 1);
+    }
+
+
+    
+
+    main#refer-earn #refer-info .refer-info-container .info-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    /* Referred Section Page 2 */
+
+    main#referred #go-back{
+        display: block;
+        margin-block: 33px;
+        color: rgba(128, 0, 128, 1);
+    }
+
+    main#referred #go-back span{
+        margin-left: 10px;
+    }
+
+    main#referred #friends h2 span{
+        color: rgba(128, 0, 128, 1);
+    }
+
+    main#referred #friends .card-slider{
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+    }
+
+    main#referred #friends .friends-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main#referred #t-c{
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width:456px){
+
+    main#referred #friends .friends-card-container .friend-card .courses{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media screen and (max-width:395px){
+    main#referred .stats h4{
+        letter-spacing: 7px;
+    }
+}
